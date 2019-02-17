@@ -8,6 +8,16 @@ class LeaderBoard extends Component {
 
         };
     }
+
+/*
+    images {
+        name: "Name",
+        impressions: NoOfRoundsAppeared,
+        points: NoOfPoints,
+        url: "FirebaseStorageURL"
+    }
+*/ 
+
     render() {
         return(
             <div>
