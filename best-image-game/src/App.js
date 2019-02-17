@@ -13,13 +13,27 @@ class App extends Component {
     };
   }
 
+  nextRound() {
+    this.setState((prevState) => {
+      roundNum: prevState + 1,
+    })
+
+    return {
+      this.state.roundNum
+    };
+
+    // this.setState({
+    //   roundNum: this.state.roundNum + 1,
+    // });
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h2>Best Of Two Images</h2>
           <p>Round {this.state.roundNum}</p>
-        <TwoImages />
+        <TwoImages onClick={this.nextRound} />
         <LeaderBoard />
         </header>
       </div>

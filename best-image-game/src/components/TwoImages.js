@@ -16,12 +16,17 @@ const photos = [
 
 class TwoImages extends Component {
 
+  incrementPoint() {
+    this.props.onClick();
+  }
+
   constructor(props) {
     super(props);
     this.state = {
-
     };
+    this.incrementPoint = this.incrementPoint.bind(this);
   }
+  
 
     render() {
       return (
@@ -35,7 +40,7 @@ class TwoImages extends Component {
                 height: "100%",
                 margin: '10px'
             }}
-            // onClick = this.incrementPoint();
+            onClick = {this.incrementPoint}
           />
           <img            
             src={photos[1]}
