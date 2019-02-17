@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import TwoImages from './components/TwoImages';
+import LeaderBoard from './components/LeaderBoard';
+
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      roundNum: 1,  
+    };
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <p>Best Of Two Images</p>
+          <h2>Best Of Two Images</h2>
+          <p>Round {this.state.roundNum}</p>
+        <TwoImages />
+        <LeaderBoard />
         </header>
       </div>
     );
