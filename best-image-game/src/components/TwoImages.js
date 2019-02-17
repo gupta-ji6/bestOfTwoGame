@@ -35,6 +35,7 @@ class TwoImages extends Component {
                 height: "100%",
                 margin: '10px'
             }}
+            // onClick = this.incrementPoint();
           />
           <img            
             src={photos[1]}
@@ -45,6 +46,7 @@ class TwoImages extends Component {
                 height: "100%",
                 margin: '10px'
             }}
+            // onClick = this.incrementPoint();
           />
         </div>
       );
